@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class='removed-sidebar'>
+            <span>Здесь будет сайдбар</span>
+        </aside>
+        <main>
+            <header class='removed-header'>Здесь будет шапка</header>
+            <div class="home">
+                <div class="home__top">
+                    <div class="datapicker">
+                        <div class="datapicker__show">
+                            <img src="img/calendar.svg" alt="">
+                            <span>с 21.02.2020 </span>&#160;по&#160;
+                            <span> 21.02.2021</span>
+                        </div>
+                        <div class="datapicker__hidden">
+                            <div class="datapicker__hidden-nav">
+                                <select class="select select-month">
+                                    <option value="Январь">Январь</option>
+                                    <option selected value="Февраль">Февраль</option>
+                                    <option value="Март">Март</option>
+                                    <option value="Апрель">Апрель</option>
+                                    <option value="Май">Май</option>
+                                    <option value="Июнь">Июнь</option>
+                                    <option value="Июль">Июль</option>
+                                    <option value="Август">Август</option>
+                                    <option value="Сентябрь">Сентябрь</option>
+                                    <option value="Октябрь">Октябрь</option>
+                                    <option value="Ноябрь">Ноябрь</option>
+                                    <option value="Декабрь">Декабрь</option>
+                                </select>
+                                <select class="select select-year">
+                                    <option selected value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                </select>
+                            </div>
+                            <div class="datapicker__days-top">
+                                <div>Пн</div>
+                                <div>Вт</div>
+                                <div>Ср</div>
+                                <div>Чт</div>
+                                <div>Пт</div>
+                                <div>Сб</div>
+                                <div>Вс</div>
+                            </div>
+                            <div class="datapicker__days">
+                                <div class="datapicker__day datapicker__day--disabled">28</div>
+                                <div class="datapicker__day datapicker__day--disabled">29</div>
+                                <div class="datapicker__day datapicker__day--disabled">30</div>
+                                <div class="datapicker__day datapicker__day--disabled">31</div>
+                                <div class="datapicker__day">1</div>
+                                <div class="datapicker__day">2</div>
+                                <div class="datapicker__day datapicker__day--weekend">3</div>
+                                <div class="datapicker__day">4</div>
+                                <div class="datapicker__day">5</div>
+                                <div class="datapicker__day">6</div>
+                                <div class="datapicker__day">7</div>
+                                <div class="datapicker__day">8</div>
+                                <div class="datapicker__day">9</div>
+                                <div class="datapicker__day datapicker__day--weekend">10</div>
+                                <div class="datapicker__day">11</div>
+                                <div class="datapicker__day">12</div>
+                                <div class="datapicker__day">13</div>
+                                <div class="datapicker__day">14</div>
+                                <div class="datapicker__day">15</div>
+                                <div class="datapicker__day">16</div>
+                                <div class="datapicker__day datapicker__day--weekend">17</div>
+                                <div class="datapicker__day">18</div>
+                                <div class="datapicker__day">19</div>
+                                <div class="datapicker__day">20</div>
+                                <div class="datapicker__day datapicker__day--from">21</div>
+                                <div class="datapicker__day">22</div>
+                                <div class="datapicker__day datapicker__day--to">23</div>
+                                <div class="datapicker__day datapicker__day--weekend">24</div>
+                                <div class="datapicker__day">25</div>
+                                <div class="datapicker__day">26</div>
+                                <div class="datapicker__day">27</div>
+                                <div class="datapicker__day">28</div>
+                                <div class="datapicker__day">29</div>
+                                <div class="datapicker__day">30</div>
+                                <div class="datapicker__day datapicker__day--disabled datapicker__day--weekend">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__content">
+                    <div class="home__table">
+                        <div class="table">
+                            <div class="table__head">
+                                <div class="table__head-title">
+                                    <span>Название</span>
+                                    <img src="img/select-arrow.svg">
+                                </div>
+                                <div class="table__head-title">
+                                    <span>Url страницы</span>
+                                    <img src="img/select-arrow2.svg">
+                                </div>
+                                <div>
+                                    <div class="table__head-title">
+                                        <span>Просмотры</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                    <div class="table__head-title">
+                                        <span>Клики</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                    <div class="table__head-title">
+                                        <span>Избранное</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                    <div class="table__head-title">
+                                        <span>CTR</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                    <div class="table__head-title">
+                                        <span>Конверсии</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                    <div class="table__head-title">
+                                        <span>Авторы</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                    <div class="table__head-title">
+                                        <span>Статьи</span>
+                                        <img src="img/select-arrow2.svg">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="table__rows mCustomScrollbar _mCS_1" data-mcs-theme="3d-dark">
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div>Компания 1</div>
+                                    <div>\du28cg423</div>
+                                    <div>
+                                        <div>14554</div>
+                                        <div>5687</div>
+                                        <div>160</div>
+                                        <div>1.60</div>
+                                        <div>35</div>
+                                        <div>(95) <span> +35</span></div>
+                                        <div>(4565) <span> +455</span></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="home__author">
+                        <div class="home__author-title">
+                            <span>Статистика по авторам</span>
+                        </div>
+                        <div class="home__author-chart">
+                            <canvas id="myChart5"></canvas>
+                        </div>
+                    </div>
+                    <div class="home__company">
+                        <p class="home__company-title">Статистика компаний</p>
+                        <div class="statistic statistic--mt50">
+                            <div class="chart-block chart-block--w120">
+                                <canvas width="140" height="140" id="myChart" style="display: block; box-sizing: border-box; height: 140px; width: 140px;"></canvas>
+                                <span>72%</span>
+                            </div>
+                            <div class="statistic__block">
+                                <div class="statistic__item statistic__item--blue">
+                                    <div>
+                                        <i></i>
+                                        <span>Просмотры</span>
+                                    </div>
+                                    <div>
+                                        <strong>20</strong>
+                                        <span>&nbsp;(32%)</span>
+                                    </div>
+                                </div>
+                                <div class="statistic__item statistic__item--orange">
+                                    <div>
+                                        <i></i>
+                                        <span>Клики</span>
+                                    </div>
+                                    <div>
+                                        <strong>20</strong>
+                                        <span> &nbsp;(32%)</span>
+                                    </div>
+                                </div>
+                                <div class="statistic__item statistic__item--red">
+                                    <div>
+                                        <i></i>
+                                        <span>Избранное</span>
+                                    </div>
+                                    <div>
+                                        <strong>15</strong>
+                                        <span> &nbsp;(24%)</span>
+                                    </div>
+                                </div>
+                                <div class="statistic__item statistic__item--green">
+                                    <div>
+                                        <i></i>
+                                        <span>CTR</span>
+                                    </div>
+                                    <div>
+                                        <strong>7</strong>
+                                        <span>&nbsp; (12%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__article">
+                        <div class="home__article-title">
+                            <span>Статистика по статьям</span>
+                            <div class="home__article-labels">
+                                <div class="home__article-label home__article-label--blue">
+                                    <i></i>
+                                    <span>Статьи</span>
+                                </div>
+                                <div class="home__article-label home__article-label--orange">
+                                    <i></i>
+                                    <span>Объявления</span>
+                                </div>
+                                <div class="home__article-label home__article-label--green">
+                                    <i></i>
+                                    <span>Отзывы</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__traffic-chart">
+                            <canvas id="myChart7"></canvas>
+                        </div>
+                    </div>
+                    <div class="home__company">
+                        <p class="home__company-title">Статистика компаний</p>
+                        <div class="statistic statistic--mt50">
+                            <div class="chart-block chart-block--w120">
+                                <canvas width="140" height="140" id="myChart2" style="display: block; box-sizing: border-box; height: 140px; width: 140px;"></canvas>
+                                <span>72%</span>
+                            </div>
+                            <div class="statistic__block">
+                                <div class="statistic__item statistic__item--blue">
+                                    <div>
+                                        <i></i>
+                                        <span>Просмотры</span>
+                                    </div>
+                                    <div>
+                                        <strong>20</strong>
+                                        <span>&nbsp;(32%)</span>
+                                    </div>
+                                </div>
+                                <div class="statistic__item statistic__item--orange">
+                                    <div>
+                                        <i></i>
+                                        <span>Клики</span>
+                                    </div>
+                                    <div>
+                                        <strong>20</strong>
+                                        <span> &nbsp;(32%)</span>
+                                    </div>
+                                </div>
+                                <div class="statistic__item statistic__item--red">
+                                    <div>
+                                        <i></i>
+                                        <span>Избранное</span>
+                                    </div>
+                                    <div>
+                                        <strong>15</strong>
+                                        <span> &nbsp;(24%)</span>
+                                    </div>
+                                </div>
+                                <div class="statistic__item statistic__item--green">
+                                    <div>
+                                        <i></i>
+                                        <span>CTR</span>
+                                    </div>
+                                    <div>
+                                        <strong>7</strong>
+                                        <span>&nbsp; (12%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </main>
+        </div>
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/datapicker.js"></script>
+        <script src="js/chart.min.js"></script>
+
+        <script src="js/index.js"></script>
+</body>
+
+</html>
