@@ -212,4 +212,8 @@ $(document).ready(function() {
         }
     })
 
+    $(".table__head-title").click(function() {
+        $(this).toggleClass("table__head-title--active")
+    })
+
 })
